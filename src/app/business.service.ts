@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class BusinessService {
-  uri = 'mongodb + srv://Megan:<equinox96@>@firstcluster-fxezs.mongodb.net/test?retryWrites=true';
+  uri = 'http://localhost:4000/business';
   constructor(private http: HttpClient) { }
   addBusiness(person_name, business_name, business_gst_number) {
     const obj = {
